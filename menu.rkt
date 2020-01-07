@@ -35,7 +35,7 @@
                                   (make_ton (car l) (cadr l) (caddr l))
                                   (make_nieme (car l) (cadr l) (caddr l)))))))
              (if (pair? (cdddr l))
-                 (if (number? (cdddr l))
+                 (if (number? (cadddr l))
                      (fct_s (car l) (cadr l) (caddr l) (cadddr l))
                      (if (or (equal? (cadr l) '+) (equal? (cadr l) '-))
                          (make_add_ss (car l) (cadr l) (caddr l) (cadddr l))
@@ -74,20 +74,3 @@
                           (make_median (car l) (cadr l))
                           (make_fib (car l) (cadr l)))
                       (display "RTFM!"))))))))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
